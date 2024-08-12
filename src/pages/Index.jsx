@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Slider } from "@/components/ui/slider"
-import { Waveform } from 'lucide-react';
+import { Music } from 'lucide-react';
 import AudioWaveform from '../components/AudioWaveform';
 
 const Index = () => {
@@ -33,7 +33,7 @@ const Index = () => {
       <h1 className="text-4xl font-bold mb-8">Composers Desktop Project (Web Version)</h1>
       <div className="w-full max-w-md space-y-4">
         <div className="flex items-center space-x-2">
-          <Waveform className="h-6 w-6" />
+          <Music className="h-6 w-6" />
           <Input type="file" accept="audio/*" onChange={handleFileChange} />
         </div>
         {audioFile && <AudioWaveform audioFile={audioFile} />}
